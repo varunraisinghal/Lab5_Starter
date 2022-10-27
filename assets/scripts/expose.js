@@ -10,6 +10,7 @@ function init()
   const selectSound = document.querySelector(".hidden");
   const setVolumeControls = document.getElementById('volume');
   const setVolumePicture = document.getElementById('volume-controls').getElementsByTagName("img")[0];
+  const hostName = 'https://varunraisinghal.github.io/Lab5_Starter/';
 
   const playSoundButton = document.querySelector('button');
 
@@ -24,7 +25,7 @@ function init()
   {
     selectSound.volume = setVolumeControls.value / 100;
     selectSound.play();
-    if(changeHornImage.src == 'http://127.0.0.1:5500/assets/images/party-horn.svg')
+    if(changeHornImage.src == hostName + 'assets/images/party-horn.svg')
     {
       jsConfetti.addConfetti();
     }
